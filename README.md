@@ -27,7 +27,7 @@ import VueChill from 'vue-chill';
 Vue.use(VueChill);
 ```
 
-Then, on every component you need to freeze something, just add a `freeze` array with the attributes to freeze to the root object:
+Then, on every component you need to chill something, just add a `chill` array with the attributes to unwatch to the root object:
 
 ```js
 Vue.component('example-component', {
@@ -40,7 +40,7 @@ Vue.component('example-component', {
         },
     },
 
-    freeze: [ 'someUnwatchedAttribute' ],
+    chill: [ 'someUnwatchedAttribute' ],
 });
 ```
 

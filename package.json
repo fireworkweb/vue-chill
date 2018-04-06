@@ -2,17 +2,29 @@
   "name": "vue-chill",
   "version": "0.0.1",
   "description": "Chill down Vue.js data watchers",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "freeze",
+    "unwatch",
+    "observer",
+    "observable"
+  ],
   "main": "dist/index.js",
   "repository": "https://github.com/fireworkweb/vue-chill.git",
   "author": "Firework Web & Mobile",
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "prod": "NODE_ENV=production babel src --out-dir dist"
+    "prod": "NODE_ENV=production babel src --out-dir dist",
+    "prepare": "yarn prod",
+    "lint": "eslint -c .eslintrc.prod.json --ext js src",
+    "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-minify": "^0.3.0"
+    "babel-preset-minify": "^0.3.0",
+    "eslint": "^4.19.1"
   }
 }

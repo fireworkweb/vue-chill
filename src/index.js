@@ -2,9 +2,9 @@ export default {
     install (Vue) {
         Vue.mixin({
             created () {
-                let freezeArr = this.$options.freeze || [];
+                let chillArr = this.$options.chill || [];
 
-                freezeArr.forEach(freezeAttr => Object.freeze(this[freezeAttr]));
+                chillArr.forEach(chillAttr => Object.freeze(this[chillAttr]));
             },
         });
     },

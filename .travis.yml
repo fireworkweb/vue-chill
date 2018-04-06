@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- 9
+- 8
+- 7
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script:
+- yarn build
+- yarn lint
+notifications:
+  slack:
+    on_success: change
+    rooms:
+      - secure: VpK8glNVwiZaJK/Qx+DaA/Sy6O1CKpyF/Y6Q9y3nApmXZP4Ua4xPJS3yp6oSShVTKaTZzkgbNdD7P4GChyo8+uaiDo3kYr/tChNkkQmEX83HHult+HesD+ndId83ltXyHC/39l7ul25g/2o84yo1b6RKyjlnw0BVOs54+SecPQK6C45ODhp/p6gxQtx42INM/ZFxlMiC7h7lmMveqGMo8ByMy2LCvpt13SR5FSITPKW9HJFBfFTj9Bzl8skRNcS/LT3d2uYD2YXfJO8FtHzoP/6cEeUKnHFLdjgTnIjorXCStAA7/Z/iiImFbGYScvr1HIqOb8jr3p4rRrqz5KZ8N3rdQQSDHSprhy/4FqMcLBUTBraNSftwrNHrvQVumsLDRHJfjvH8y9ZJM4Fc8vTt+aLPOF5uBRz6RIXgdEcKH6ULNApL/0uGZnfAVA3w7uuo5/efk9cRI6Lw+8+7cyvYDAzB4X7J7t4CrKY58ieXROFimWIijmIFzsVri0AXDoNP2NWAlGejnrgQ+BRmc/GAT31q5GBHg7A3fmTn4H+UQB03pK8QLbQl+KWbWFFtlMKgBpmm7HutmzcPLq2VBOZYB3K5GKztZ3rH3X6+Vz9xn89Q/MhvYpDQ9M/OYpCdA0j6UNr0O5ZMcROFkDItwI58GwB7d5HD82SIsj29zo9s2lM=
