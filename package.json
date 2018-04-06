@@ -1,6 +1,6 @@
 {
   "name": "vue-chill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Chill down Vue.js data watchers",
   "keywords": [
     "vue",
